@@ -10,3 +10,55 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+
+/* CSS for color palate  */
+
+    .Parent{
+        width: auto;
+        height: auto;
+        margin: auto;
+
+    }
+    .Parent > div{
+        padding:19px;  
+        background-color:rgb(219, 219, 211);
+        margin: 5px;
+        width:auto;
+        display: flex;
+        justify-content: center;
+    }
+    .inside{
+        display: flex;
+        border-radius: 10px;
+    }
+   
+    .white{
+        width:10%;
+        height:auto;
+        background-color: rgb(248, 246, 246);
+        color:rgb(160, 149, 149);
+        padding: 5px;
+        border-top-left-radius:5px;
+        border-bottom-left-radius:5px;
+
+    }
+    .white p{
+        margin: 0px;
+    }
+    .palate{
+        width:80%;
+        height:auto;
+        background-color: wheat;
+        display: grid;
+        padding: 5px;
+        grid-template-columns: repeat(5,1fr);
+
+    }
+     .palate > div{
+        padding: 20px 50px;
+        margin: 5px;
+        background-color: red;
+        border-radius: 4px;
+
+    }
+    
