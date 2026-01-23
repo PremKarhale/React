@@ -1,12 +1,12 @@
 // Define Props always in the parent 
-function UserCard({image , name , email}){
+function UserCard({user}){
     return <>
     <div className="card">
-        <img src={image} alt="UserPlaceholder" />
-        <h3>{name}</h3>
+        <img src={user.image} alt="UserPlaceholder" />
+        <h3>{user.name}</h3>
         {
-        email ? (
-            <p>{email}</p>
+        user.email ? (
+            <p>{user.email}</p>
         ):(
             <p style={{color: "red"}}>Email is not Available </p>
         )
