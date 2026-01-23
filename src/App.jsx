@@ -15,6 +15,7 @@ import NotFound from './Pages/NotFound.jsx'
 import Register from './Pages/Register.jsx'
 import UseEffect from './components/UseEffect.jsx'
 import Fetching from './components/Fetching.jsx'
+import RandomPerson_UI from './components/RandomPerson_UI.jsx'
 
 function App() {
   const name = "Prem"
@@ -210,9 +211,9 @@ function App() {
     {/* <Todo/> */}
     {/* <UseEffect/> */}
 
-    <Navbar/>
+    {/* <Navbar/> */}
     
-    <Routes>
+    {/* <Routes>
     <Route path='/'  element={<Home/>}/>
     <Route path='/about' element={<About/>}/>
     <Route path='/products' element={<Product/>}/>
@@ -220,10 +221,10 @@ function App() {
     <Route path='/contact' element={<Contact/>}/>
     <Route path='*' element={<NotFound/>}/>
     <Route path="/register" element={<Register login = {true}/>} />
-    </Routes>
+    </Routes> */}
 
     {/* <Fetching/> */}
-
+    <RandomPerson_UI/>
  
 
     </>
