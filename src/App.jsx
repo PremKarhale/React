@@ -2,7 +2,6 @@ import './App.css'
 import Card from "./components/ArticleCard"
 import UserCard from './components/userCard'
 import Colorpalate from './components/Colorpalate'
-import State from '../UseState.jsx'
 import Todo from './Todo.jsx'
 import { Link, Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar.jsx'
@@ -16,6 +15,9 @@ import Register from './Pages/Register.jsx'
 import UseEffect from './components/UseEffect.jsx'
 import Fetching from './components/Fetching.jsx'
 import RandomPerson_UI from './components/RandomPerson_UI.jsx'
+import ProductDetail from './Pages/ProductDetail.jsx'
+import SignUp from './components/SignUp.jsx'
+import Login from './Pages/Login.jsx'
 
 function App() {
   const name = "Prem"
@@ -211,9 +213,10 @@ function App() {
     {/* <Todo/> */}
     {/* <UseEffect/> */}
 
-    {/* <Navbar/> */}
+    <Navbar/>
     
-    {/* <Routes>
+    <Routes>
+    
     <Route path='/'  element={<Home/>}/>
     <Route path='/about' element={<About/>}/>
     <Route path='/products' element={<Product/>}/>
@@ -221,10 +224,15 @@ function App() {
     <Route path='/contact' element={<Contact/>}/>
     <Route path='*' element={<NotFound/>}/>
     <Route path="/register" element={<Register login = {true}/>} />
-    </Routes> */}
+    <Route path='/product/:id' element={<ProductDetail/>} />
+    <Route path='/signup' element={<SignUp/>} />
+    <Route path='/login' element={<Login/>} />
+    </Routes>
+    
 
     {/* <Fetching/> */}
-    <RandomPerson_UI/>
+
+    {/* <RandomPerson_UI/> */}
  
 
     </>
