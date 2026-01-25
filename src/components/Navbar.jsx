@@ -14,10 +14,16 @@ function Navbar(){
         <Link to="/products">Products</Link>
         <Link to="/profile">Profile</Link>
         <Link to="/contact">Contact</Link>
+        
       </div>
       <Link to="/register">
         <button className="w-1/4 ">Register</button>
       </Link>
+      <Link to={"/signup"}
+      ><button className="bg-red-500 text-white ml-50 p-2 rounded-4xl text-xl">
+        Signup
+        </button> 
+        </Link>
     </div>
     )
 }
